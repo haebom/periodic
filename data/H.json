@@ -1,0 +1,22 @@
+{
+  "symbol": "H",
+  "number": 1,
+  "enName": "Hydrogen",
+  "koName": "수소",
+  "summary_en": "Hydrogen is a chemical element with chemical symbol H and atomic number 1. With an atomic weight of 1.00794 u, hydrogen is the lightest element on the periodic table. Its monatomic form (H) is the most abundant chemical substance in the Universe, constituting roughly 75% of all baryonic mass.",
+  "summary_ko": "Hydrogen은(는) 이원자 비금속 원소로, 로켓 연료(LH2) 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "Rocket fuel (LH2)",
+    "Ammonia production (Haber)"
+  ],
+  "uses_ko": [
+    "로켓 연료(LH2)",
+    "암모니아 생산(하버 공정)"
+  ],
+  "category_en": "diatomic nonmetal",
+  "category_ko": "이원자 비금속",
+  "phase_en": "Gas",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Hydrogen",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EC%88%98%EC%86%8C"
+}

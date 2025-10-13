@@ -1,0 +1,22 @@
+{
+  "symbol": "Au",
+  "number": 79,
+  "enName": "Gold",
+  "koName": "금",
+  "summary_en": "Gold is a chemical element with symbol Au (from Latin:aurum) and atomic number 79. In its purest form, it is a bright, slightly reddish yellow, dense, soft, malleable and ductile metal. Chemically, gold is a transition metal and a group 11 element.",
+  "summary_ko": "Gold은(는) 전이 금속 원소로, 보석 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "Jewelry",
+    "Electronics"
+  ],
+  "uses_ko": [
+    "보석",
+    "전자 공학"
+  ],
+  "category_en": "transition metal",
+  "category_ko": "전이 금속",
+  "phase_en": "Solid",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Gold",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EA%B8%88"
+}

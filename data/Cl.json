@@ -1,0 +1,22 @@
+{
+  "symbol": "Cl",
+  "number": 17,
+  "enName": "Chlorine",
+  "koName": "염소",
+  "summary_en": "Chlorine is a chemical element with symbol Cl and atomic number 17. It also has a relative atomic mass of 35.5. Chlorine is in the halogen group (17) and is the second lightest halogen following fluorine.",
+  "summary_ko": "Chlorine은(는) 이원자 비금속 원소로, PVC 생산 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "PVC production",
+    "Water disinfection"
+  ],
+  "uses_ko": [
+    "PVC 생산",
+    "정수 소독"
+  ],
+  "category_en": "diatomic nonmetal",
+  "category_ko": "이원자 비금속",
+  "phase_en": "Gas",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Chlorine",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EC%97%BC%EC%86%8C"
+}

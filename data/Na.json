@@ -1,0 +1,22 @@
+{
+  "symbol": "Na",
+  "number": 11,
+  "enName": "Sodium",
+  "koName": "나트륨",
+  "summary_en": "Sodium /ˈsoʊdiəm/ is a chemical element with symbol Na (from Ancient Greek Νάτριο) and atomic number 11. It is a soft, silver-white, highly reactive metal. In the Periodic table it is in column 1 (alkali metals), and shares with the other six elements in that column that it has a single electron in its outer shell, which it readily donates, creating a positively charged atom - a cation.",
+  "summary_ko": "Sodium은(는) 알칼리 금속 원소로, 식염(NaCl) 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "Table salt (NaCl)",
+    "Street lamps (Na vapor)"
+  ],
+  "uses_ko": [
+    "식염(NaCl)",
+    "가로등(나트륨 증기)"
+  ],
+  "category_en": "alkali metal",
+  "category_ko": "알칼리 금속",
+  "phase_en": "Solid",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Sodium",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EB%82%98%ED%8A%B8%EB%A5%A8"
+}

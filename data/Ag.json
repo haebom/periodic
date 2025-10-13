@@ -1,0 +1,22 @@
+{
+  "symbol": "Ag",
+  "number": 47,
+  "enName": "Silver",
+  "koName": "은",
+  "summary_en": "Silver is a chemical element with symbol Ag (Greek:άργυρος árguros, Latin:argentum, both from the Indo-European root *h₂erǵ- for \"grey\" or \"shining\") and atomic number 47. A soft, white, lustrous transition metal, it possesses the highest electrical conductivity, thermal conductivity and reflectivity of any metal. The metal occurs naturally in its pure, free form (native silver), as an alloy with gold and other metals, and in minerals such as argentite and chlorargyrite.",
+  "summary_ko": "Silver은(는) 전이 금속 원소로, 사진 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "Photography",
+    "Electronics"
+  ],
+  "uses_ko": [
+    "사진",
+    "전자 공학"
+  ],
+  "category_en": "transition metal",
+  "category_ko": "전이 금속",
+  "phase_en": "Solid",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Silver",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EC%9D%80"
+}

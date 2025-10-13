@@ -1,0 +1,22 @@
+{
+  "symbol": "P",
+  "number": 15,
+  "enName": "Phosphorus",
+  "koName": "인",
+  "summary_en": "Phosphorus is a chemical element with symbol P and atomic number 15. As an element, phosphorus exists in two major forms—white phosphorus and red phosphorus—but due to its high reactivity, phosphorus is never found as a free element on Earth. Instead phosphorus-containing minerals are almost always present in their maximally oxidised state, as inorganic phosphate rocks.",
+  "summary_ko": "Phosphorus은(는) 다원자 비금속 원소로, 비료 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "Fertilizers",
+    "Matches"
+  ],
+  "uses_ko": [
+    "비료",
+    "성냥"
+  ],
+  "category_en": "polyatomic nonmetal",
+  "category_ko": "다원자 비금속",
+  "phase_en": "Solid",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Phosphorus",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EC%9D%B8"
+}

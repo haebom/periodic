@@ -1,0 +1,22 @@
+{
+  "symbol": "O",
+  "number": 8,
+  "enName": "Oxygen",
+  "koName": "산소",
+  "summary_en": "Oxygen is a chemical element with symbol O and atomic number 8. It is a member of the chalcogen group on the periodic table and is a highly reactive nonmetal and oxidizing agent that readily forms compounds (notably oxides) with most elements. By mass, oxygen is the third-most abundant element in the universe, after hydrogen and helium.",
+  "summary_ko": "Oxygen은(는) 이원자 비금속 원소로, 의료용 산소 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "Medical oxygen",
+    "Combustion"
+  ],
+  "uses_ko": [
+    "의료용 산소",
+    "연소"
+  ],
+  "category_en": "diatomic nonmetal",
+  "category_ko": "이원자 비금속",
+  "phase_en": "Gas",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Oxygen",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EC%82%B0%EC%86%8C"
+}

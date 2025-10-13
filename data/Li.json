@@ -1,0 +1,22 @@
+{
+  "symbol": "Li",
+  "number": 3,
+  "enName": "Lithium",
+  "koName": "리튬",
+  "summary_en": "Lithium (from Greek:λίθος lithos, \"stone\") is a chemical element with the symbol Li and atomic number 3. It is a soft, silver-white metal belonging to the alkali metal group of chemical elements. Under standard conditions it is the lightest metal and the least dense solid element.",
+  "summary_ko": "Lithium은(는) 알칼리 금속 원소로, 충전식 배터리 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "Rechargeable batteries",
+    "Ceramics/Glass"
+  ],
+  "uses_ko": [
+    "충전식 배터리",
+    "세라믹/유리"
+  ],
+  "category_en": "alkali metal",
+  "category_ko": "알칼리 금속",
+  "phase_en": "Solid",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Lithium",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EB%A6%AC%ED%8A%AC"
+}

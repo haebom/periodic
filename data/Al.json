@@ -1,0 +1,22 @@
+{
+  "symbol": "Al",
+  "number": 13,
+  "enName": "Aluminium",
+  "koName": "알루미늄",
+  "summary_en": "Aluminium (or aluminum; see different endings) is a chemical element in the boron group with symbol Al and atomic number 13. It is a silvery-white, soft, nonmagnetic, ductile metal. Aluminium is the third most abundant element (after oxygen and silicon), and the most abundant metal, in the Earth's crust.",
+  "summary_ko": "Aluminium은(는) 후전이 금속 원소로, 항공 우주 합금 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "Aerospace alloys",
+    "Packaging foil"
+  ],
+  "uses_ko": [
+    "항공 우주 합금",
+    "포장용 박"
+  ],
+  "category_en": "post-transition metal",
+  "category_ko": "후전이 금속",
+  "phase_en": "Solid",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Aluminium",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84"
+}

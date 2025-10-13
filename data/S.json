@@ -1,0 +1,22 @@
+{
+  "symbol": "S",
+  "number": 16,
+  "enName": "Sulfur",
+  "koName": "황",
+  "summary_en": "Sulfur or sulphur (see spelling differences) is a chemical element with symbol S and atomic number 16. It is an abundant, multivalent non-metal. Under normal conditions, sulfur atoms form cyclic octatomic molecules with chemical formula S8.",
+  "summary_ko": "Sulfur은(는) 다원자 비금속 원소로, 가황 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "Vulcanization",
+    "Sulfuric acid"
+  ],
+  "uses_ko": [
+    "가황",
+    "황산"
+  ],
+  "category_en": "polyatomic nonmetal",
+  "category_ko": "다원자 비금속",
+  "phase_en": "Solid",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Sulfur",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%ED%99%A9"
+}

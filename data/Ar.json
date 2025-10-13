@@ -1,0 +1,16 @@
+{
+  "symbol": "Ar",
+  "number": 18,
+  "enName": "Argon",
+  "koName": "아르곤",
+  "summary_en": "Argon is a chemical element with symbol Ar and atomic number 18. It is in group 18 of the periodic table and is a noble gas. Argon is the third most common gas in the Earth's atmosphere, at 0.934% (9,340 ppmv), making it over twice as abundant as the next most common atmospheric gas, water vapor (which averages about 4000 ppmv, but varies greatly), and 23 times as abundant as the next most common non-condensing atmospheric gas, carbon dioxide (400 ppmv), and more than 500 times as abundant as the next most common noble gas, neon (18 ppmv).",
+  "summary_ko": "Argon은(는) 비활성 기체 원소로, 교육·연구·산업에 활용되는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [],
+  "uses_ko": [],
+  "category_en": "noble gas",
+  "category_ko": "비활성 기체",
+  "phase_en": "Gas",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Argon",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EC%95%84%EB%A5%B4%EA%B3%A4"
+}

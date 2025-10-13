@@ -1,0 +1,16 @@
+{
+  "symbol": "Ne",
+  "number": 10,
+  "enName": "Neon",
+  "koName": "네온",
+  "summary_en": "Neon is a chemical element with symbol Ne and atomic number 10. It is in group 18 (noble gases) of the periodic table. Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about two-thirds the density of air.",
+  "summary_ko": "Neon은(는) 비활성 기체 원소로, 교육·연구·산업에 활용되는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [],
+  "uses_ko": [],
+  "category_en": "noble gas",
+  "category_ko": "비활성 기체",
+  "phase_en": "Gas",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Neon",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EB%84%A4%EC%98%A8"
+}

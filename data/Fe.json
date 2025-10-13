@@ -1,0 +1,22 @@
+{
+  "symbol": "Fe",
+  "number": 26,
+  "enName": "Iron",
+  "koName": "철",
+  "summary_en": "Iron is a chemical element with symbol Fe (from Latin:ferrum) and atomic number 26. It is a metal in the first transition series. It is by mass the most common element on Earth, forming much of Earth's outer and inner core.",
+  "summary_ko": "Iron은(는) 전이 금속 원소로, 건축용 강재 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "Construction steel",
+    "Tools"
+  ],
+  "uses_ko": [
+    "건축용 강재",
+    "공구"
+  ],
+  "category_en": "transition metal",
+  "category_ko": "전이 금속",
+  "phase_en": "Solid",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Iron",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EC%B2%A0"
+}

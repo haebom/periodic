@@ -1,0 +1,16 @@
+{
+  "symbol": "Rn",
+  "number": 86,
+  "enName": "Radon",
+  "koName": "라돈",
+  "summary_en": "Radon is a chemical element with symbol Rn and atomic number 86. It is a radioactive, colorless, odorless, tasteless noble gas, occurring naturally as a decay product of radium. Its most stable isotope, 222Rn, has a half-life of 3.8 days.",
+  "summary_ko": "Radon은(는) 비활성 기체 원소로, 교육·연구·산업에 활용되는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [],
+  "uses_ko": [],
+  "category_en": "noble gas",
+  "category_ko": "비활성 기체",
+  "phase_en": "Gas",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Radon",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EB%9D%BC%EB%8F%88"
+}

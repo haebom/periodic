@@ -1,0 +1,16 @@
+{
+  "symbol": "Ge",
+  "number": 32,
+  "enName": "Germanium",
+  "koName": "게르마늄",
+  "summary_en": "Germanium is a chemical element with symbol Ge and atomic number 32. It is a lustrous, hard, grayish-white metalloid in the carbon group, chemically similar to its group neighbors tin and silicon. Purified germanium is a semiconductor, with an appearance most similar to elemental silicon.",
+  "summary_ko": "Germanium은(는) 준금속 원소로, 교육·연구·산업에 활용되는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [],
+  "uses_ko": [],
+  "category_en": "metalloid",
+  "category_ko": "준금속",
+  "phase_en": "Solid",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Germanium",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EA%B2%8C%EB%A5%B4%EB%A7%88%EB%8A%84"
+}

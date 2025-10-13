@@ -1,0 +1,16 @@
+{
+  "symbol": "Mo",
+  "number": 42,
+  "enName": "Molybdenum",
+  "koName": "몰리브데넘",
+  "summary_en": "Molybdenum is a chemical element with symbol Mo and atomic number 42. The name is from Neo-Latin molybdaenum, from Ancient Greek Μόλυβδος molybdos, meaning lead, since its ores were confused with lead ores. Molybdenum minerals have been known throughout history, but the element was discovered (in the sense of differentiating it as a new entity from the mineral salts of other metals) in 1778 by Carl Wilhelm Scheele.",
+  "summary_ko": "Molybdenum은(는) 전이 금속 원소로, 교육·연구·산업에 활용되는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [],
+  "uses_ko": [],
+  "category_en": "transition metal",
+  "category_ko": "전이 금속",
+  "phase_en": "Solid",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Molybdenum",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EB%AA%B0%EB%A6%AC%EB%B8%8C%EB%8D%B0%EB%84%98"
+}

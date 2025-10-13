@@ -1,0 +1,22 @@
+{
+  "symbol": "He",
+  "number": 2,
+  "enName": "Helium",
+  "koName": "헬륨",
+  "summary_en": "Helium is a chemical element with symbol He and atomic number 2. It is a colorless, odorless, tasteless, non-toxic, inert, monatomic gas that heads the noble gas group in the periodic table. Its boiling and melting points are the lowest among all the elements.",
+  "summary_ko": "Helium은(는) 비활성 기체 원소로, 극저온 공학 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "Cryogenics",
+    "Balloon lifting gas"
+  ],
+  "uses_ko": [
+    "극저온 공학",
+    "풍선 부양 가스"
+  ],
+  "category_en": "noble gas",
+  "category_ko": "비활성 기체",
+  "phase_en": "Gas",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Helium",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%ED%97%AC%EB%A5%A8"
+}

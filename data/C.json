@@ -1,0 +1,22 @@
+{
+  "symbol": "C",
+  "number": 6,
+  "enName": "Carbon",
+  "koName": "탄소",
+  "summary_en": "Carbon (from Latin:carbo \"coal\") is a chemical element with symbol C and atomic number 6. On the periodic table, it is the first (row 2) of six elements in column (group) 14, which have in common the composition of their outer electron shell. It is nonmetallic and tetravalent—making four electrons available to form covalent chemical bonds.",
+  "summary_ko": "Carbon은(는) 다원자 비금속 원소로, 철강 제조 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "Steel making",
+    "Composites"
+  ],
+  "uses_ko": [
+    "철강 제조",
+    "Composites"
+  ],
+  "category_en": "polyatomic nonmetal",
+  "category_ko": "다원자 비금속",
+  "phase_en": "Solid",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Carbon",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%ED%83%84%EC%86%8C"
+}

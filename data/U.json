@@ -1,0 +1,22 @@
+{
+  "symbol": "U",
+  "number": 92,
+  "enName": "Uranium",
+  "koName": "우라늄",
+  "summary_en": "Uranium is a chemical element with symbol U and atomic number 92. It is a silvery-white metal in the actinide series of the periodic table. A uranium atom has 92 protons and 92 electrons, of which 6 are valence electrons.",
+  "summary_ko": "Uranium은(는) 악티늄족 원소로, 원자력 연료 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "Nuclear fuel",
+    "Radiometric dating (U-series)"
+  ],
+  "uses_ko": [
+    "원자력 연료",
+    "방사 연대 측정(U 계열)"
+  ],
+  "category_en": "actinide",
+  "category_ko": "악티늄족",
+  "phase_en": "Solid",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Uranium",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EC%9A%B0%EB%9D%BC%EB%8A%84"
+}

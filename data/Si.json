@@ -1,0 +1,22 @@
+{
+  "symbol": "Si",
+  "number": 14,
+  "enName": "Silicon",
+  "koName": "규소",
+  "summary_en": "Silicon is a chemical element with symbol Si and atomic number 14. It is a tetravalent metalloid, more reactive than germanium, the metalloid directly below it in the table. Controversy about silicon's character dates to its discovery.",
+  "summary_ko": "Silicon은(는) 준금속 원소로, 반도체 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "Semiconductors",
+    "Solar cells"
+  ],
+  "uses_ko": [
+    "반도체",
+    "태양전지"
+  ],
+  "category_en": "metalloid",
+  "category_ko": "준금속",
+  "phase_en": "Solid",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Silicon",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EA%B7%9C%EC%86%8C"
+}

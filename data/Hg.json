@@ -1,0 +1,16 @@
+{
+  "symbol": "Hg",
+  "number": 80,
+  "enName": "Mercury",
+  "koName": "수은",
+  "summary_en": "Mercury is a chemical element with symbol Hg and atomic number 80. It is commonly known as quicksilver and was formerly named hydrargyrum (/haɪˈdrɑːrdʒərəm/). A heavy, silvery d-block element, mercury is the only metallic element that is liquid at standard conditions for temperature and pressure; the only other element that is liquid under these conditions is bromine, though metals such as caesium, gallium, and rubidium melt just above room temperature.",
+  "summary_ko": "Mercury은(는) 전이 금속 원소로, 교육·연구·산업에 활용되는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [],
+  "uses_ko": [],
+  "category_en": "transition metal",
+  "category_ko": "전이 금속",
+  "phase_en": "Liquid",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Mercury (Element)",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EC%88%98%EC%9D%80"
+}

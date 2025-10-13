@@ -1,0 +1,22 @@
+{
+  "symbol": "N",
+  "number": 7,
+  "enName": "Nitrogen",
+  "koName": "질소",
+  "summary_en": "Nitrogen is a chemical element with symbol N and atomic number 7. It is the lightest pnictogen and at room temperature, it is a transparent, odorless diatomic gas. Nitrogen is a common element in the universe, estimated at about seventh in total abundance in the Milky Way and the Solar System.",
+  "summary_ko": "Nitrogen은(는) 이원자 비금속 원소로, 비료 등에 쓰이는 기본 소재다. 상온에서는 이며 안전 지침을 따라 다루는 것이 권장된다.",
+  "uses_en": [
+    "Fertilizers",
+    "Inert atmosphere"
+  ],
+  "uses_ko": [
+    "비료",
+    "불활성 분위기"
+  ],
+  "category_en": "diatomic nonmetal",
+  "category_ko": "이원자 비금속",
+  "phase_en": "Gas",
+  "phase_ko": "",
+  "wiki": "https://en.wikipedia.org/wiki/Nitrogen",
+  "wiki_ko": "https://ko.wikipedia.org/wiki/%EC%A7%88%EC%86%8C"
+}
