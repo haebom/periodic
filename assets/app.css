@@ -262,11 +262,33 @@ body[data-theme="light"] .cell[data-category]:hover { background: #E9EEF5; borde
 body[data-theme="dark"] .cell:hover,
 body[data-theme="dark"] .cell[data-category]:hover { background: #1E2530; border-color: var(--accent); }
 
-/* 카테고리 선택 시 셀 박스 강조 */
-body.category-boxing .cell { box-shadow: 0 0 0 2px var(--border), 0 4px 12px rgba(0,0,0,0.25); background: color-mix(in oklab, var(--card), white 8%); }
-body.category-boxing .cell:focus { outline: 2px solid var(--border); outline-offset: 0; }
+/* Category background fills (light theme) */
+body[data-theme="light"] .cell[data-category="alkali metal"] { background: color-mix(in oklab, var(--cat-alkali-metal), white 85%); }
+body[data-theme="light"] .cell[data-category="alkaline earth metal"] { background: color-mix(in oklab, var(--cat-alkaline-earth-metal), white 85%); }
+body[data-theme="light"] .cell[data-category="transition metal"] { background: color-mix(in oklab, var(--cat-transition-metal), white 85%); }
+body[data-theme="light"] .cell[data-category="post-transition metal"] { background: color-mix(in oklab, var(--cat-post-transition-metal), white 85%); }
+body[data-theme="light"] .cell[data-category="metalloid"] { background: color-mix(in oklab, var(--cat-metalloid), white 85%); }
+body[data-theme="light"] .cell[data-category="diatomic nonmetal"] { background: color-mix(in oklab, var(--cat-diatomic-nonmetal), white 85%); }
+body[data-theme="light"] .cell[data-category="polyatomic nonmetal"] { background: color-mix(in oklab, var(--cat-polyatomic-nonmetal), white 85%); }
+body[data-theme="light"] .cell[data-category="noble gas"] { background: color-mix(in oklab, var(--cat-noble-gas), white 85%); }
+body[data-theme="light"] .cell[data-category="lanthanide"] { background: color-mix(in oklab, var(--cat-lanthanide), white 85%); }
+body[data-theme="light"] .cell[data-category="actinide"] { background: color-mix(in oklab, var(--cat-actinide), white 85%); }
+body[data-theme="light"] .cell[data-category="halogen"] { background: color-mix(in oklab, var(--cat-halogen), white 85%); }
+body[data-theme="light"] .cell[data-category="unknown"] { background: color-mix(in oklab, var(--cat-unknown), white 88%); }
 
-/* 설명: category-boxing 활성화 시 .cell 테두리/그림자/배경 강조. 접근성 고려해 포커스 시에도 동일 강조 유지 */
+/* Category background fills (dark theme) */
+body[data-theme="dark"] .cell[data-category="alkali metal"] { background: color-mix(in oklab, var(--cat-alkali-metal), black 85%); }
+body[data-theme="dark"] .cell[data-category="alkaline earth metal"] { background: color-mix(in oklab, var(--cat-alkaline-earth-metal), black 85%); }
+body[data-theme="dark"] .cell[data-category="transition metal"] { background: color-mix(in oklab, var(--cat-transition-metal), black 85%); }
+body[data-theme="dark"] .cell[data-category="post-transition metal"] { background: color-mix(in oklab, var(--cat-post-transition-metal), black 85%); }
+body[data-theme="dark"] .cell[data-category="metalloid"] { background: color-mix(in oklab, var(--cat-metalloid), black 85%); }
+body[data-theme="dark"] .cell[data-category="diatomic nonmetal"] { background: color-mix(in oklab, var(--cat-diatomic-nonmetal), black 85%); }
+body[data-theme="dark"] .cell[data-category="polyatomic nonmetal"] { background: color-mix(in oklab, var(--cat-polyatomic-nonmetal), black 85%); }
+body[data-theme="dark"] .cell[data-category="noble gas"] { background: color-mix(in oklab, var(--cat-noble-gas), black 85%); }
+body[data-theme="dark"] .cell[data-category="lanthanide"] { background: color-mix(in oklab, var(--cat-lanthanide), black 85%); }
+body[data-theme="dark"] .cell[data-category="actinide"] { background: color-mix(in oklab, var(--cat-actinide), black 85%); }
+body[data-theme="dark"] .cell[data-category="halogen"] { background: color-mix(in oklab, var(--cat-halogen), black 85%); }
+body[data-theme="dark"] .cell[data-category="unknown"] { background: color-mix(in oklab, var(--cat-unknown), black 88%); }
 
 :root { --cat-alkali-metal: #ff6b6b; --cat-alkaline-earth-metal: #ffa94d; --cat-transition-metal: #ffd43b; --cat-post-transition-metal: #a5d8ff; --cat-metalloid: #66d9e8; --cat-polyatomic-nonmetal: #b2f2bb; --cat-diatomic-nonmetal: #8ce99a; --cat-noble-gas: #c0eb75; --cat-lanthanide: #faa2c1; --cat-actinide: #e599f7; --cat-halogen: #51cf66; --cat-unknown: #adb5bd; }
 .cell[data-category] { border-color: color-mix(in oklab, var(--cat-unknown), transparent 10%); }
