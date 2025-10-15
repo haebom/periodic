@@ -62,6 +62,86 @@ const USES = /** @type {Record<string, string[]>} */ ({
   U: ['⚛️ Nuclear fuel', '⏱️ Radiometric dating (U-series)'],
 });
 
+/** Bilingual uses fallback mapping for selected elements */
+const USES_BI = /** @type {Record<string, {ko: string[]; en: string[]}>} */ ({
+  H: {
+    ko: ['🚀 로켓 연료(LH2)', '🧪 암모니아 합성(하버 공정)'],
+    en: ['🚀 Rocket fuel (LH2)', '🧪 Ammonia production (Haber)'],
+  },
+  He: {
+    ko: ['❄️ 극저온 냉각', '🎈 풍선 부양 가스'],
+    en: ['❄️ Cryogenics', '🎈 Balloon lifting gas'],
+  },
+  Li: {
+    ko: ['🔋 충전식 배터리', '🏺 세라믹·유리'],
+    en: ['🔋 Rechargeable batteries', '🏺 Ceramics/Glass'],
+  },
+  C: {
+    ko: ['🏗️ 철강 제조', '🧱 흑연·복합재'],
+    en: ['🏗️ Steel making', '🧱 Graphite/Composites'],
+  },
+  N: {
+    ko: ['🌱 비료', '🛡️ 불활성 분위기'],
+    en: ['🌱 Fertilizers', '🛡️ Inert atmosphere'],
+  },
+  O: {
+    ko: ['🏥 의료용 산소', '🔥 연소'],
+    en: ['🏥 Medical oxygen', '🔥 Combustion'],
+  },
+  Na: {
+    ko: ['🧂 식염(NaCl)', '💡 나트륨 증기 램프'],
+    en: ['🧂 Table salt (NaCl)', '💡 Street lamps (Na vapor)'],
+  },
+  Al: {
+    ko: ['✈️ 항공우주 합금', '📦 포장용 포일'],
+    en: ['✈️ Aerospace alloys', '📦 Packaging foil'],
+  },
+  Si: {
+    ko: ['💻 반도체', '🔆 태양전지'],
+    en: ['💻 Semiconductors', '🔆 Solar cells'],
+  },
+  P: {
+    ko: ['🌾 비료', '🔥 성냥'],
+    en: ['🌾 Fertilizers', '🔥 Matches'],
+  },
+  S: {
+    ko: ['🔧 가황', '🏭 황산 제조'],
+    en: ['🔧 Vulcanization', '🏭 Sulfuric acid'],
+  },
+  Cl: {
+    ko: ['🏗️ PVC 생산', '💧 수처리 소독'],
+    en: ['🏗️ PVC production', '💧 Water disinfection'],
+  },
+  Fe: {
+    ko: ['🏗️ 건설용 강재', '🛠️ 공구'],
+    en: ['🏗️ Construction steel', '🛠️ Tools'],
+  },
+  Cu: {
+    ko: ['🔌 전기 배선', '🚰 배관'],
+    en: ['🔌 Electrical wiring', '🚰 Plumbing'],
+  },
+  Ag: {
+    ko: ['📸 사진', '🔧 전자부품'],
+    en: ['📸 Photography', '🔧 Electronics'],
+  },
+  Au: {
+    ko: ['💍 보석', '🔧 전자부품'],
+    en: ['💍 Jewelry', '🔧 Electronics'],
+  },
+  Hg: {
+    ko: ['🌡️ 온도계(과거)', '🥇 금 추출(아말감, 과거)'],
+    en: ['🌡️ Thermometers (legacy)', '🥇 Gold extraction (amalgams, legacy)'],
+  },
+  Pb: {
+    ko: ['🔋 납축전지', '🛡️ 방사선 차폐'],
+    en: ['🔋 Lead-acid batteries', '🛡️ Radiation shielding'],
+  },
+  U: {
+    ko: ['⚛️ 원자력 연료', '⏱️ 방사성 동위원소 연대측정(U 계열)'],
+    en: ['⚛️ Nuclear fuel', '⏱️ Radiometric dating (U-series)'],
+  },
+});
+
 /** Fetch data once and init */
 async function init() {
   cacheRefs();
@@ -450,6 +530,9 @@ function updateMinibar() {
 const I18N = {
   ko: {
     uses: '🎯 용도',
+    core_features: '핵심 특성',
+    block_label: '블록',
+    reactivity_label: '반응성',
     source: '원본: Wikipedia 요약 (ko→en 폴백)',
     ai_summary_badge: 'AI 생성 요약(학습용)',
     search_placeholder: '번호 · 심볼 · 이름 검색',
@@ -499,6 +582,9 @@ const I18N = {
   },
   en: {
     uses: 'Uses',
+    core_features: 'Core Characteristics',
+    block_label: 'Block',
+    reactivity_label: 'Reactivity',
     source: 'Source: Wikipedia summary (ko→en fallback)',
     ai_summary_badge: 'AI-generated summary (educational)',
     search_placeholder: 'Search number · symbol · name',
@@ -683,21 +769,59 @@ function categoryColor(cat) {
   return map[token] || '#adb5bd';
 }
 
+/** Build a core features HTML block for tooltip/dialog */
+function buildCoreFeaturesHTML(el) {
+  const L = I18N[state.lang];
+  const catLabel = tCategory(el.category ?? '');
+  const catDesc = tCategoryDesc(el.category ?? '');
+  const block = (el.block ? String(el.block).toUpperCase() : '');
+  const react = reactivityLabel(el.category ?? '');
+  const items = [];
+  if (catLabel || catDesc) items.push(`<li><strong>${catLabel}:</strong> ${catDesc}</li>`);
+  if (block) items.push(`<li><strong>${L.block_label}:</strong> ${block}</li>`);
+  if (react) items.push(`<li><strong>${L.reactivity_label}:</strong> ${react}</li>`);
+  if (items.length === 0) return '';
+  return `<div class="t-core" style="margin-top:8px"><strong>🧩 ${L.core_features}</strong><ul style="margin:4px 0 0 18px; padding:0;">${items.join('')}</ul></div>`;
+}
+
+/** Return localized reactivity description based on category */
+function reactivityLabel(cat) {
+  const key = String(cat || '').toLowerCase();
+  const L = state.lang;
+  const labels = {
+    ko: { high: '매우 높음', moderate: '중간', low: '매우 낮음' },
+    en: { high: 'High', moderate: 'Moderate', low: 'Very low' },
+  };
+  /** @type {'high'|'moderate'|'low'|''} */
+  let level = '';
+  if (key === 'alkali metal' || key === 'halogen') level = 'high';
+  else if (key === 'noble gas') level = 'low';
+  else if (key === 'alkaline earth metal' || key === 'transition metal' || key === 'post-transition metal' || key === 'metalloid' || key === 'polyatomic nonmetal' || key === 'diatomic nonmetal' || key === 'lanthanide' || key === 'actinide') level = 'moderate';
+  return level ? labels[L][level] : '';
+}
+
 /** Render tooltip from local data */
 function renderTooltipFromData(el, data, x, y) {
   const t = refs.tooltip ?? document.getElementById('tooltip');
   if (!t) return;
+  const L = I18N[state.lang];
   
   const displayName = state.lang === 'ko' ? (data.koName || data.enName) : (data.enName || data.koName);
   const altName = state.lang === 'ko' ? data.enName : data.koName;
   const summary = data[`summary_${state.lang}`] || data.summary_en || '';
-  const uses = data[`uses_${state.lang}`] || data.uses_en || [];
+  const usesLocal = Array.isArray(data[`uses_${state.lang}`]) ? /** @type {string[]} */(data[`uses_${state.lang}`]) : [];
+  const usesEn = Array.isArray(data.uses_en) ? /** @type {string[]} */(data.uses_en) : [];
+  const usesBi = USES_BI[el.symbol]?.[state.lang] || [];
+  const usesFallback = USES[el.symbol] || [];
+  const uses = usesLocal.length ? usesLocal : (usesEn.length ? usesEn : (usesBi.length ? usesBi : usesFallback));
   const category = data[`category_${state.lang}`] || data.category_en || '';
   const phase = data[`phase_${state.lang}`] || data.phase_en || '';
 
   const usesHtml = uses.length > 0 
-    ? `<div class="t-uses" style="margin-top:8px"><strong>🎯 ${state.lang === 'ko' ? '용도' : 'Uses'}</strong><ul style="margin:4px 0 0 18px; padding:0;">${uses.map(u => `<li>${u}</li>`).join('')}</ul></div>` 
+    ? `<div class="t-uses" style="margin-top:8px"><strong>${L.uses}</strong><ul style="margin:4px 0 0 18px; padding:0;">${uses.map(u => `<li>${u}</li>`).join('')}</ul></div>` 
     : '';
+
+  const coreHtml = buildCoreFeaturesHTML(el);
 
   t.innerHTML = `
     <div class="t-head">
@@ -706,6 +830,7 @@ function renderTooltipFromData(el, data, x, y) {
     </div>
     <div class="t-meta">${category}${phase ? ` · ${phase}` : ''}</div>
     <div class="t-desc" style="margin-top:6px">${summary || (state.lang === 'ko' ? '요약이 준비되지 않았습니다.' : 'Summary not available.')}</div>
+    ${coreHtml}
     ${usesHtml}
     <div class="t-note" style="margin-top:8px; font-size:12px; opacity:.7">${state.lang === 'ko' ? '데이터 출처' : 'Source'}: /data/${el.symbol}.json</div>
   `;
@@ -832,18 +957,25 @@ function buildDialogHTML(el, data) {
   const displayName = state.lang === 'ko' ? (data.koName || data.enName) : (data.enName || data.koName);
   const altName = state.lang === 'ko' ? data.enName : data.koName;
   const summary = data[`summary_${state.lang}`] || data.summary_en || '';
-  const uses = data[`uses_${state.lang}`] || data.uses_en || [];
+  const usesLocal = Array.isArray(data[`uses_${state.lang}`]) ? /** @type {string[]} */(data[`uses_${state.lang}`]) : [];
+  const usesEn = Array.isArray(data.uses_en) ? /** @type {string[]} */(data.uses_en) : [];
+  const usesBi = USES_BI[el.symbol]?.[state.lang] || [];
+  const usesFallback = USES[el.symbol] || [];
+  const uses = usesLocal.length ? usesLocal : (usesEn.length ? usesEn : (usesBi.length ? usesBi : usesFallback));
   const category = data[`category_${state.lang}`] || data.category_en || '';
   const phase = data[`phase_${state.lang}`] || data.phase_en || '';
 
   const usesHtml = uses.length > 0 
-    ? `<div style="margin-top:12px"><strong>🎯 ${state.lang === 'ko' ? '용도' : 'Uses'}</strong><ul style="margin:8px 0 0 20px;">${uses.map(u => `<li>${u}</li>`).join('')}</ul></div>` 
+    ? `<div style="margin-top:12px"><strong>${L.uses}</strong><ul style="margin:8px 0 0 20px;">${uses.map(u => `<li>${u}</li>`).join('')}</ul></div>` 
     : '';
+
+  const coreHtml = buildCoreFeaturesHTML(el);
 
   return `
     <h2>${el.symbol} · ${displayName} ${altName ? `(${altName})` : ''} (#${el.number})</h2>
     <p style="color: var(--muted)">${category}${phase ? ` · ${phase}` : ''}</p>
     <div style="margin-top:12px; line-height:1.6">${summary}</div>
+    ${coreHtml}
     ${usesHtml}
     <ul style="margin-top:16px; font-size:13px">
       ${li(L.atomic_mass, el.atomic_mass)}
