@@ -772,12 +772,9 @@ function categoryColor(cat) {
 /** Build a core features HTML block for tooltip/dialog */
 function buildCoreFeaturesHTML(el) {
   const L = I18N[state.lang];
-  const catLabel = tCategory(el.category ?? '');
-  const catDesc = tCategoryDesc(el.category ?? '');
   const block = (el.block ? String(el.block).toUpperCase() : '');
   const react = reactivityLabel(el.category ?? '');
   const items = [];
-  if (catLabel || catDesc) items.push(`<li><strong>${catLabel}:</strong> ${catDesc}</li>`);
   if (block) items.push(`<li><strong>${L.block_label}:</strong> ${block}</li>`);
   if (react) items.push(`<li><strong>${L.reactivity_label}:</strong> ${react}</li>`);
   if (items.length === 0) return '';
@@ -805,21 +802,34 @@ function renderTooltipFromData(el, data, x, y) {
   const t = refs.tooltip ?? document.getElementById('tooltip');
   if (!t) return;
   const L = I18N[state.lang];
-  
+
   const displayName = state.lang === 'ko' ? (data.koName || data.enName) : (data.enName || data.koName);
   const altName = state.lang === 'ko' ? data.enName : data.koName;
   const summary = data[`summary_${state.lang}`] || data.summary_en || '';
+
+  // Uses: prefer localized, then en, then curated bilingual, then generic
   const usesLocal = Array.isArray(data[`uses_${state.lang}`]) ? /** @type {string[]} */(data[`uses_${state.lang}`]) : [];
   const usesEn = Array.isArray(data.uses_en) ? /** @type {string[]} */(data.uses_en) : [];
   const usesBi = USES_BI[el.symbol]?.[state.lang] || [];
   const usesFallback = USES[el.symbol] || [];
   const uses = usesLocal.length ? usesLocal : (usesEn.length ? usesEn : (usesBi.length ? usesBi : usesFallback));
-  const category = data[`category_${state.lang}`] || data.category_en || '';
-  const phase = data[`phase_${state.lang}`] || data.phase_en || '';
 
-  const usesHtml = uses.length > 0 
-    ? `<div class="t-uses" style="margin-top:8px"><strong>${L.uses}</strong><ul style="margin:4px 0 0 18px; padding:0;">${uses.map(u => `<li>${u}</li>`).join('')}</ul></div>` 
+  const metaCat = tCategory(el.category);
+  const phaseLabel = tPhase(el.phase);
+  const catDesc = tCategoryDesc(el.category);
+
+  const usesHtml = uses && uses.length > 0
+    ? `<div class="t-uses" style="margin-top:8px"><strong>${L.uses}</strong><ul style="margin:4px 0 0 18px; padding:0;">${uses.map(u => `<li>${u}</li>`).join('')}</ul></div>`
     : '';
+
+  const statsHtml = `<ul class="t-stats" style="margin-top:8px; font-size:12px">`
+    + `${li(L.atomic_mass, el.atomic_mass)}`
+    + `${li(L.electron_configuration, el.electron_configuration)}`
+    + `${li(L.electronegativity_pauling, el.electronegativity_pauling)}`
+    + `${li(L.melt, el.melt)}`
+    + `${li(L.boil, el.boil)}`
+    + `${li(L.density, el.density)}`
+    + `</ul>`;
 
   const coreHtml = buildCoreFeaturesHTML(el);
 
@@ -828,11 +838,13 @@ function renderTooltipFromData(el, data, x, y) {
       <span class="dot" style="background:${categoryColor(el.category)}"></span>
       <strong>${el.symbol} · ${displayName} ${altName ? `(${altName})` : ''} (#${el.number})</strong>
     </div>
-    <div class="t-meta">${category}${phase ? ` · ${phase}` : ''}</div>
+    <div class="t-meta">${metaCat}${phaseLabel ? ` · ${phaseLabel}` : ''}</div>
     <div class="t-desc" style="margin-top:6px">${summary || (state.lang === 'ko' ? '요약이 준비되지 않았습니다.' : 'Summary not available.')}</div>
+    <div class="t-desc" style="margin-top:6px; opacity:.85">${catDesc}</div>
     ${coreHtml}
+    ${statsHtml}
     ${usesHtml}
-    <div class="t-note" style="margin-top:8px; font-size:12px; opacity:.7">${state.lang === 'ko' ? '데이터 출처' : 'Source'}: /data/${el.symbol}.json</div>
+    <div class="t-note" style="margin-top:8px; font-size:12px; opacity:.7">${L.source}: /data/${el.symbol}.json</div>
   `;
   t.setAttribute('aria-hidden', 'false');
   positionTooltip({ clientX: x, clientY: y });
@@ -980,6 +992,10 @@ function buildDialogHTML(el, data) {
     <ul style="margin-top:16px; font-size:13px">
       ${li(L.atomic_mass, el.atomic_mass)}
       ${li(L.electron_configuration, el.electron_configuration)}
+      ${li(L.electronegativity_pauling, el.electronegativity_pauling)}
+      ${li(L.melt, el.melt)}
+      ${li(L.boil, el.boil)}
+      ${li(L.density, el.density)}
       ${li(L.discovered_by, el.discovered_by)}
     </ul>
   `;

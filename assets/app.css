@@ -332,3 +332,7 @@ body[data-theme="light"] .cell:hover,
 body[data-theme="light"] .cell[data-category]:hover { background: #E9EEF5; border-color: var(--accent); }
 body[data-theme="dark"] .cell:hover,
 body[data-theme="dark"] .cell[data-category]:hover { background: #1E2530; border-color: var(--accent); }
+
+#tooltip .t-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; list-style: none; margin: 8px 0 0 0; padding: 0; }
+#tooltip .t-stats li { list-style: none; margin: 0; }
+#tooltip .t-stats strong { color: var(--muted); margin-right: 4px; }
